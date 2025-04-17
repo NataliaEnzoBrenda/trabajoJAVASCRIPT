@@ -1,0 +1,196 @@
+/* Aseguramos que el diseño se vea bien en dispositivos pequeños */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Con los estilos utilizados queremos llevar a cabo lo siguiente::
+-Reinicia márgenes y rellenos para todos los elementos y establece box-sizing: border-box 
+para que el ancho/alto incluya el padding y el borde, facilitando el diseño responsive.*/
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+    color: #333; 
+}
+/*Definimos estilos base del cuerpo: tipografía legible, interlineado cómodo, 
+fondo claro y texto oscuro para buena legibilidad.*/
+    
+
+/* Cabecera principal */
+header {
+    background-color: #2c3e50;         /* Color de fondo oscuro para dar contraste y elegancia */
+    padding: 20px;                       /* Espacio interno para que el contenido no esté pegado a los bordes */
+    display: flex;                       /* Uso de Flexbox para alinear los elementos del header en línea */
+    justify-content: space-between;      /* Distribuye los elementos con espacio entre ellos (logo a la izquierda, menú a la derecha) */
+    align-items: center;                 /* Centra verticalmente los elementos dentro del header */
+    flex-wrap: wrap;                     /* Permite que los elementos se ajusten si no caben en una sola línea */
+}
+
+/* Contenedor del logo (imagen + texto) */
+.container-logo {
+    display: flex;                       /* Coloca la imagen del logo y el texto en una línea horizontal */
+    align-items: center;                 /* Centra verticalmente imagen y texto */
+}
+
+/* Imagen del logo */
+.container-logo img {
+    width: 50px;                         /* Define un tamaño fijo para la imagen del logo */
+    margin-right: 10px;                  /* Espacio a la derecha de la imagen, antes del texto */
+}
+
+/* Texto del logo */
+.logo-text {
+    color: white;                       /* Color blanco para destacarse sobre el fondo oscuro */
+    font-size: 24px;                      /* Tamaño grande para el nombre de la marca */
+    font-weight: bold;                    /* Negrita para mayor impacto visual */
+}
+
+/* Lista de enlaces de navegación */
+.nav-links ul {
+    display: flex;                        /* Distribuye los enlaces de forma horizontal */
+    list-style: none;                     /* Quita los puntos de lista predeterminados */
+    gap: 20px;                            /* Espacio entre cada enlace */
+}
+
+/* Estilo de los enlaces del menú */
+.nav-links a {
+    color: white;                       /* Texto blanco para buena visibilidad en fondo oscuro */
+    text-decoration: none;                /* Quita el subrayado predeterminado de los enlaces */
+    font-size: 18px;                      /* Tamaño cómodo para lectura y navegación */
+}
+
+/* Efecto hover para los enlaces del menú */
+.nav-links a:hover {
+    color: #3498db;                      /* Color azul claro al pasar el mouse para dar retroalimentación visual */
+}
+
+/* Estilos para los botones de login/registro */
+.container-sign {
+    display: flex;       /* Coloca los botones en línea (horizontalmente) */
+    gap: 10px;           /* Espacio entre los botones */
+}
+
+.sign-item a {
+    color: white;         /* Texto en color blanco */
+    text-decoration: none;  /* Elimina el subrayado de los enlaces */
+    font-size: 16px;        /* Tamaño de fuente legible */
+    padding: 10px 15px;     /* Espaciado interno para que el botón se vea cómodo */
+    border: 1px solid #fff; /* Borde blanco para resaltar el botón */
+    border-radius: 5px;     /* Bordes redondeados para un diseño más moderno */
+    transition: background-color 0.3s; /* Transición suave para el efecto hover */
+}
+
+.sign-item a:hover {
+    background-color: #3498db; /* Cambia el fondo al pasar el mouse, dando retroalimentación visual */
+}
+
+/* Estilos footer */
+
+/* Estilos generales del footer */
+.footer-container {
+    background-color: #2c3e50;     /* Fondo oscuro para contraste */
+    color: white;                  /* Texto en blanco para mejor visibilidad */
+    padding: 40px 0;                 /* Espaciado superior e inferior amplio */
+    font-family: 'Arial', sans-serif;/* Fuente coherente con el resto del sitio */
+    text-align: center;              /* Centra el texto por defecto */
+}
+
+/* Estilo del logo dentro del footer */
+.footer-logo img {
+    width: 50px;                 /* Tamaño fijo para el logo */
+    margin-bottom: 10px;         /* Espacio entre la imagen y el texto del logo */
+}
+
+.footer-logo span {
+    font-size: 20px;             /* Tamaño del texto del logo */
+    font-weight: bold;           /* Letra en negrita para destacar el nombre */
+}
+
+/* Contenedor interno con estructura flexible */
+.footer-container .container {
+    display: flex;               /* Flexbox para alinear columnas */
+    justify-content: space-between; /* Distribuye las secciones equitativamente */
+    flex-wrap: wrap;             /* Permite que se acomoden en varias líneas en pantallas pequeñas */
+    max-width: 1200px;           /* Ancho máximo del contenido */
+    margin: 0 auto;              /* Centrado horizontal */
+    padding: 0 20px;             /* Espaciado lateral */
+}
+
+/* Logo del footer  */
+.footer-logo {
+    flex: 1;                     /* Ocupa un espacio igual que las otras columnas */
+    text-align: left;            /* Alineación a la izquierda */
+    margin-bottom: 20px;         /* Espacio inferior para separarlo del resto */
+}
+
+/* Columnas de enlaces, redes y contacto */
+.footer-links,
+.footer-social,
+.footer-contact {
+    flex: 1;                     /* Cada columna ocupa el mismo espacio */
+    margin-bottom: 20px;         /* Separación entre secciones */
+}
+
+/* Listas limpias (sin viñetas) */
+.footer-links ul,
+.footer-social ul {
+    list-style: none;           /* Elimina los puntos de lista */
+    padding: 0;                 /* Sin padding adicional */
+}
+
+/* Espacio entre elementos de la lista */
+.footer-links ul li,
+.footer-social ul li {
+    margin-bottom: 10px;        /* Separación entre los enlaces */
+}
+
+/* Estilo de enlaces */
+.footer-links a,
+.footer-social a {
+    color: white;             /* Color blanco para los enlaces */
+    text-decoration: none;      /* Sin subrayado */
+    font-size: 16px;            /* Tamaño estándar */
+    transition: color 0.3s;     /* Transición suave al pasar el mouse */
+}
+
+/* Cambio de color al hacer hover sobre enlaces */
+.footer-links a:hover,
+.footer-social a:hover {
+    color: #3498db;             /* Color azul claro al pasar el mouse */
+}
+
+/* Espaciado a la derecha de los íconos de contacto */
+.footer-contact i {
+    margin-right: 10px;         /* Espacio entre ícono y texto */
+}
+
+/* Estilos para la franja inferior del footer */
+.footer-bottom {
+    background-color: #34495e;/* Color ligeramente más claro que el footer */
+    padding: 20px 0;            /* Espaciado vertical */
+    font-size: 14px;            /* Tamaño más pequeño para el texto legal */
+}
+
+/* Elimina márgenes del párrafo de copyright */
+.footer-bottom p {
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

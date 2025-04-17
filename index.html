@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Agencia de viajes</title>
+    <!--Hojas de Estilo global y especificas de cada apartado-->
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/home.css">
+    <!--Iconos de Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+			
+</head>
+<body>
+    <!--CABECERA-->
+    <!-- Contiene el logo, la navegación principal y los enlaces de acceso -->
+    
+    <header class="header-container">
+        <a href="/" class="container-logo">
+            <img src="./images/logo_adventurero.png" alt="Imagen logo">
+            <span class="logo-text">Viajando Por El Mundo</span>
+        </a>
+
+    <!--BARRA DE NAVEGACION-->
+
+        <nav class="nav-links">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="./views/contacto.html">Contacto</a></li>
+                <li><a href="./views/presupuesto.html">Presupuesto</a></li>
+                <li><a href="./views/productos.html">Productos</a></li>
+            </ul>
+        </nav>
+
+        <!-- Enlaces para iniciar sesión o registrarse -->   
+        
+        <ul class="container-sign">
+            <li class="sign-item">
+                <a href="#" class="sign-in">Entrar</a>
+            </li>
+            <li class="sign-item">
+                <a href="#" class="sign-up">Registrarse</a>
+            </li>
+        </ul>
+    </header>
+
+    <!-- SECCION PRINCIPAL -->
+    <!-- Sección de bienvenida con mensaje motivador y botón de acción -->
+
+    <section class="hero">
+        <div class="hero-content">
+          <h1>Tu próxima aventura comienza aquí</h1>
+            <p>Descubre destinos increíbles, vive experiencias únicas y deja que nosotros nos encarguemos del resto.</p>
+                <a href="./views/productos.html" class="btn-explorar">Explorar destinos</a>
+        </div>
+    </section>
+    
+    <!-- SECCIÓN SOBRE NOSOTROS -->
+     <!-- Presentación de la agencia, su misión y experiencia -->
+    
+     <section class="about-us">
+        <div class="about-container">
+            <div class="about-text">
+                <h2>Sobre Nosotros</h2>
+                    <p>En <strong>Viajando Por El Mundo</strong> somos más que una agencia de viajes, somos tus cómplices en la aventura. 
+                    Con más de 10 años de experiencia, conectamos a nuestros clientes con los destinos más fascinantes del planeta. 
+                    Nuestro equipo de expertos se encarga de cada detalle para que tú solo disfrutes.</p>
+                    <p>Creemos que viajar transforma, por eso trabajamos con pasión para que cada experiencia sea única e inolvidable.</p>
+            </div>
+                <div class="about-image">
+                    <img src="./images/passport-2714675_1920.jpg" alt="Mapa mundi">
+                </div>
+        </div>
+    </section>
+  
+
+    <!-- DESTINOS POPULARES -->
+    <!-- Galería de destinos recomendados con precios -->
+    
+    <section class="popular-destinations">
+        <div class="container">
+            <h2>Destinos Populares</h2>
+                <p class="section-description">Explora nuestros destinos favoritos, seleccionados por nuestros viajeros frecuentes.</p>
+  
+        <div class="destinations-grid">
+            <div class="destination-card">
+                <img src="./images/paris.jpg" alt="París">
+                    <h3>París</h3>
+                        <p>Desde 899 Euros</p>
+            </div>
+  
+            <div class="destination-card">
+                <img src="./images/tokio.jpg" alt="Tokio">
+                    <h3>Tokio</h3>
+                        <p>Desde 1099 euros</p>
+            </div>
+  
+            <div class="destination-card">
+                <img src="./images/empire-state-building-6675010_1920.jpg" alt="New York">
+                    <h3>New York</h3>
+                        <p>Desde 950 Euros</p>
+            </div>
+        </div>
+        </div>
+    </section>
+    
+    <!-- SECCIÓN BLOG Y NOTICIAS -->
+    <!-- Sección informativa con artículos, consejos y novedades -->
+    
+    <section class="blog-section">
+        <div class="container">
+            <h2>Blog y Noticias</h2>
+                <p class="section-description">Inspírate con consejos, guías y las últimas novedades del mundo de los viajes.</p>
+  
+        <div class="blog-grid" id="blog-grid">
+        <article class="blog-card">
+            <img src="./images/suitcase-4410369_1920.jpg" alt="Consejos de viaje">
+            <div class="blog-content">
+                <h3>10 Consejos para tu primer viaje internacional</h3>
+                    <p>Viajar al extranjero puede parecer abrumador, pero con estos consejos estarás más que preparado para tu aventura.</p>
+                        <a href="#" class="read-more">Leer más</a>
+            </div>
+        </article>
+  
+        <article class="blog-card">
+            <img src="./images/sky-6768714_1920.jpg" alt="Ofertas 2025">
+            <div class="blog-content">
+                <h3>Ofertas exclusivas para viajar en 2025</h3>
+                    <p>¡No te pierdas nuestras promociones especiales para los destinos más populares del próximo año!</p>
+                        <a href="#" class="read-more">Leer más</a>
+            </div>
+        </article>
+  
+        <article class="blog-card">
+            <img src="./images/tokyo-2091357_1920.jpg" alt="Guía de Tokio">
+            <div class="blog-content">
+                <h3>Guía completa para descubrir Tokio</h3>
+                    <p>Templos, tecnología, gastronomía y más: descubre todo lo que esta ciudad increíble tiene para ofrecerte.</p>
+                        <a href="#" class="read-more">Leer más</a>
+            </div>
+        </article>
+            </div>
+        </div>
+    </section>
+    
+    <!-- SECCIÓN FOOTER -->
+    <!-- Contiene el logo, enlaces rápidos, redes sociales y contacto -->
+
+    <footer class="footer-container">
+    <div class="container">
+        <!-- Logo y descripción -->
+        <div class="footer-logo">
+            <a href="/" class="container-logo">
+                <img src="./images/logo_adventurero.png" alt="Logo Agencia de Viajes">
+                <span class="logo-text">Viajando Por El Mundo</span>
+            </a>
+            <p>Tu compañero perfecto para explorar el mundo.</p>
+        </div>
+
+        <!-- Enlaces rápidos -->
+        <div class="footer-links">
+            <h4>Enlaces Rápidos</h4>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="./views/contacto.html">Contacto</a></li>
+                <li><a href="./views/presupuesto.html">Presupuesto</a></li>
+                <li><a href="./views/productos.html">Productos</a></li>
+            </ul>
+        </div>
+
+        <!-- Redes sociales -->
+        <div class="footer-social">
+            <h4>Síguenos en</h4>
+            <ul>
+                <li><a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i> Facebook</a></li>
+                <li><a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
+                <li><a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i> Twitter</a></li>
+                <li><a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+            </ul>
+        </div>
+
+        <!-- Información de contacto -->
+        <div class="footer-contact">
+            <h4>Contacto</h4>
+            <p><i class="fas fa-phone-alt"></i> +1 234 567 890</p>
+            <p><i class="fas fa-envelope"></i> contacto@viajandoporelmundo.com</p>
+            <p><i class="fas fa-map-marker-alt"></i> Calle de la Aventura 123, Ciudad de los Viajes, España</p>
+        </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="footer-bottom">
+        <p>&copy; 2025 Viajando Por El Mundo. Todos los derechos reservados.</p>
+    </div>
+</footer>
+      
+</body>
+</html>

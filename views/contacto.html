@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Agencia de viajes</title>
+    <!-- Estilos de Leaflet para mapas interactivos -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+
+    <!-- Estilos de Leaflet Routing Machine para crear rutas en el mapa -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.css">
+
+    <!-- Estilos globales personalizados para la página -->
+    <link rel="stylesheet" href="../css/global.css">
+
+    <!-- Estilos específicos para la cabecera (header) del sitio -->
+    <link rel="stylesheet" href="../css/header.css">
+
+    <!-- Estilos específicos para la página de contacto -->
+    <link rel="stylesheet" href="../css/contacto.css">
+
+    <!-- Estilos de Font Awesome para los iconos en la página -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+			
+</head>
+<body>
+    <!--CABECERA-->
+    <!--Contiene el logo, la navegación principal y los enlaces de aacceso-->
+    <header class="header-container">
+        <a href="/" class="container-logo">
+            <img src="../images/logo_adventurero.png" alt="Imagen logo">
+            <span class="logo-text">Viajando Por El Mundo</span>
+        </a>
+
+    <!--BARRA DE NAVEGACION-->
+        <nav class="nav-links">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="#">Contacto</a></li>
+                <li><a href="../views/presupuesto.html">Presupuesto</a></li>
+                <li><a href="../views/productos.html">Productos</a></li>
+            </ul>
+        </nav>
+        
+        <!--Enlaces para iniciar sesión o registrarse-->
+        <ul class="container-sign">
+            <li class="sign-item">
+                <a href="#" class="sign-in">Entrar</a>
+            </li>
+            <li class="sign-item">
+                <a href="#" class="sign-up">Registrarse</a>
+            </li>
+        </ul>
+
+    </header>
+    
+    <!-- Contenedor del mapa interactivo -->
+    <div id="map"></div>
+
+    <!-- Información de contacto del negocio -->
+    <div class="contact-info">
+        <!-- Nombre del negocio -->
+        <p><strong>Nombre del negocio:</strong> Viajando Por El Mundo</p>
+    
+        <!-- Dirección del negocio -->
+        <p><strong>Dirección:</strong> Calle de la Aventura 123, Ciudad de los Viajes, España</p>
+    
+        <!-- Número de teléfono del negocio -->
+        <p><strong>Teléfono:</strong> +1 234 567 890</p>
+    
+        <!-- Correo electrónico del negocio -->
+        <p><strong>Email:</strong> contacto@viajandoporelmundo.com</p>
+    </div>
+
+
+    <!-- SECCIÓN FOOTER -->
+     <!--Contiene el logo, enlaces rápidos, redes sociales y contacto-->
+    <footer class="footer-container">
+        <div class="container">
+            <!-- Logo y descripción -->
+            <div class="footer-logo">
+                <a href="/" class="container-logo">
+                    <img src="../images/logo_adventurero.png" alt="Logo Agencia de Viajes">
+                    <span class="logo-text">Viajando Por El Mundo</span>
+                </a>
+                <p>Tu compañero perfecto para explorar el mundo.</p>
+            </div>
+    
+            <!-- Enlaces rápidos -->
+            <div class="footer-links">
+                <h4>Enlaces Rápidos</h4>
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="#">Contacto</a></li>
+                    <li><a href="./views/presupuesto.html">Presupuesto</a></li>
+                    <li><a href="./views/productos.html">Productos</a></li>
+                </ul>
+            </div>
+    
+            <!-- Redes sociales -->
+            <div class="footer-social">
+                <h4>Síguenos en</h4>
+                <ul>
+                    <li><a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i> Facebook</a></li>
+                    <li><a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
+                    <li><a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i> Twitter</a></li>
+                    <li><a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                </ul>
+            </div>
+    
+            <!-- Información de contacto -->
+            <div class="footer-contact">
+                <h4>Contacto</h4>
+                <p><i class="fas fa-phone-alt"></i> +1 234 567 890</p>
+                <p><i class="fas fa-envelope"></i> contacto@viajandoporelmundo.com</p>
+                <p><i class="fas fa-map-marker-alt"></i> Calle de la Aventura 123, Ciudad de los Viajes, España</p>
+            </div>
+        </div>
+    
+        <!-- Copyright -->
+        <div class="footer-bottom">
+            <p>&copy; 2025 Viajando Por El Mundo. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!--JAVASCRIPT: cargar libreriras para mapa interactivo-->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <!--Script para calcular la ruta-->
+    <script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script>
+    <script src="../js/scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Agencia de Viajes</title>
+    <!-- Vincula el archivo de estilos específicos para el encabezado del sitio -->
+    <link rel="stylesheet" href="../css/header.css">
+
+    <!-- Vincula el archivo de estilos específicos para la página de presupuesto -->
+    <link rel="stylesheet" href="../css/presupuesto.css">
+
+    <!-- Vincula el archivo de estilos globales, con una versión específica (v=1.1) para controlar caché -->
+    <link rel="stylesheet" href="../css/global.css?v=1.1">
+      
+</head>
+<body>
+     <!--CABECERA-->
+     <!--Contiene el logo, la navegación principal y los enlaces de acceso-->
+     <header class="header-container">
+        <a href="/" class="container-logo">
+            <img src="/images/logo_adventurero.png" alt="Imagen logo">
+            <span class="logo-text">Viajando Por El Mundo</span>
+        </a>
+
+    <!--BARRA DE NAVEGACION-->
+        <nav class="nav-links">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../views/contacto.html">Contacto</a></li>
+                <li><a href="#">Presupuesto</a></li>
+                <li><a href="../views/productos.html">Productos</a></li>
+            </ul>
+        </nav>
+            
+        <ul class="container-sign">
+            <li class="sign-item">
+                <a href="#" class="sign-in">Entrar</a>
+            </li>
+            <li class="sign-item">
+                <a href="#" class="sign-up">Registrarse</a>
+            </li>
+        </ul>
+    </header>
+    
+    <!--CONTENIDO PRINCIPAL-->
+        
+    <div class="presupuesto-container">
+      <h1>Solicita tu Presupuesto de Viaje</h1>
+  
+      <form id="formularioPresupuesto">
+        <!-- DATOS DE CONTACTO -->
+        <fieldset>
+          <legend>Datos de contacto</legend>
+  
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" maxlength="15" required>
+          <span class="error" id="errorNombre"></span>
+  
+          <label for="apellidos">Apellidos:</label>
+          <input type="text" id="apellidos" maxlength="40" required>
+          <span class="error" id="errorApellidos"></span>
+  
+          <label for="telefono">Teléfono:</label>
+          <input type="text" id="telefono" maxlength="9" required>
+          <span class="error" id="errorTelefono"></span>
+  
+          <label for="email">Correo electrónico:</label>
+          <input type="email" id="email" required>
+          <span class="error" id="errorEmail"></span>
+        </fieldset>
+  
+        <!-- PRESUPUESTO -->
+        <fieldset>
+          <legend>Opciones de presupuesto</legend>
+  
+          <label for="producto">Destino del viaje:</label>
+          <select id="producto">
+            <option value="0">-- Selecciona tu destino --</option>
+            <option value="500">Paquete a París - 500 euros</option>
+            <option value="700">Paquete a Mexico - 700 euros</option>
+            <option value="800">Paquete a Nueva York - 800 euros</option>
+            <option value="800">Paquete a Nueva Roma - 850 euros</option>
+            <option value="800">Paquete a Tokio - 1000 euros</option>
+          </select>
+  
+          <label for="plazo">Duración del viaje (en días):</label>
+          <input type="number" id="plazo" min="1" value="1">
+  
+          <label>Extras:</label>
+          <div class="extras">
+            <label><input type="checkbox" class="extra" value="50"> Seguro de viaje (+50)</label><br>
+            <label><input type="checkbox" class="extra" value="100"> Excursión adicional (+100)</label><br>
+            <label><input type="checkbox" class="extra" value="150"> Asiento preferente (+150)</label><br>
+          </div>
+  
+          <label for="presupuestoTotal">Presupuesto Total:</label>
+          <input type="text" id="presupuestoTotal" readonly>
+        </fieldset>
+  
+        <!-- CONDICIONES -->
+        <fieldset>
+          <label><input type="checkbox" id="condiciones"> Acepto las condiciones de privacidad</label>
+          <br><br>
+          <button type="submit" class="button">Enviar</button>
+          <button type="reset" class="button reset">Resetear</button>
+        </fieldset>
+      </form>
+    </div>
+
+   <!-- SECCIÓN FOOTER -->
+    <!--Contiene el logo, enlaces rápidos, redes sociales y contacto-->
+   <footer class="footer-container">
+    <div class="container">
+        <!-- Logo y descripción -->
+        <div class="footer-logo">
+            <a href="/" class="container-logo">
+                <img src="../images/logo_adventurero.png" alt="Logo Agencia de Viajes">
+                <span class="logo-text">Viajando Por El Mundo</span>
+            </a>
+            <p>Tu compañero perfecto para explorar el mundo.</p>
+        </div>
+
+        <!-- Enlaces rápidos -->
+        <div class="footer-links">
+            <h4>Enlaces Rápidos</h4>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./views/contacto.html">Contacto</a></li>
+                <li><a href="./views/presupuesto.html">Presupuesto</a></li>
+                <li><a href="#">Productos</a></li>
+            </ul>
+        </div>
+
+        <!-- Redes sociales -->
+        <div class="footer-social">
+            <h4>Síguenos en</h4>
+            <ul>
+                <li><a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i> Facebook</a></li>
+                <li><a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
+                <li><a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i> Twitter</a></li>
+                <li><a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+            </ul>
+        </div>
+
+        <!-- Información de contacto -->
+        <div class="footer-contact">
+            <h4>Contacto</h4>
+            <p><i class="fas fa-phone-alt"></i> +1 234 567 890</p>
+            <p><i class="fas fa-envelope"></i> contacto@viajandoporelmundo.com</p>
+            <p><i class="fas fa-map-marker-alt"></i> Calle de la Aventura 123, Ciudad de los Viajes, España</p>
+        </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="footer-bottom">
+        <p>&copy; 2025 Viajando Por El Mundo. Todos los derechos reservados.</p>
+    </div>
+</footer>
+<!--JAVASCRIPT-->
+<!--Enlace al archivo Javascript que maneja la lógica del formulario del presupuesto-->
+<script src="../js/presupuesto.js"></script>
+   
+
+</body>
+</html>

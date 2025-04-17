@@ -1,0 +1,109 @@
+/* Contenedor principal */
+.presupuesto-container {
+  /* background-color: #fff; */ 
+  /* Se puede quitar el comentario para activar el fondo blanco si se necesita */
+  border-radius: 10px; /* Bordes redondeados para dar un estilo suave */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra suave alrededor del contenedor */
+  padding: 40px; /* Espacio interno alrededor del contenido */
+  width: 100%; /* El contenedor ocupa el 100% del ancho disponible */
+  /* max-width: 650px; */ 
+  /* Comentado, puedes activarlo para establecer un máximo de ancho en pantallas grandes */
+  border-top: 5px solid --color-primario; /* Usar el color primario para bordes */
+  display: flex; /* Utiliza flexbox para organizar los elementos dentro del contenedor */
+  flex-direction: column; /* Los elementos dentro del contenedor se apilan verticalmente */
+}
+
+/*Estilos para el Titulo*/
+h1 {
+  text-align: center; /* Centra el título horizontalmente */
+  color: #333; /* Color de texto oscuro para el título */
+  font-size: 28px; /* Tamaño de fuente adecuado */
+  margin-bottom: 30px; /* Espacio debajo del título */
+  font-weight: 700; /* Negrita */
+}
+
+
+/* Estilos del formulario */
+fieldset {
+  border: none; /* Sin borde */
+  margin-bottom: 25px; /* Espacio debajo del fieldset */
+  padding: 10px; /* Relleno interno para los campos */
+  border-radius: 8px; /* Bordes redondeados */
+  background-color: #f9f9f9; /* Fondo suave */
+}
+
+
+legend {
+  font-size: 20px; /* Tamaño de fuente para el legend */
+  color: #333; /* Color oscuro */
+  font-weight: 700; /* Negrita */
+}
+
+/* Estilo de los campos de texto */
+label {
+  font-size: 16px; /* Tamaño adecuado para la etiqueta */
+  color: #333; /* Color oscuro */
+  margin-bottom: 10px; /* Espacio debajo de cada etiqueta */
+  display: block; /* Hace que la etiqueta ocupe toda la línea */
+  margin-top: 15px; /* Espacio en la parte superior */
+}
+
+input[type="text"], input[type="email"], input[type="number"], select {
+  width: 100%; /* Ocupa todo el ancho disponible */
+  padding: 12px; /* Relleno interno para los campos */
+  border-radius: 8px; /* Bordes redondeados */
+  border: 1px solid #ddd; /* Borde suave */
+  margin-bottom: 15px; /* Espacio debajo de los campos */
+  font-size: 16px; /* Tamaño de texto adecuado */
+  background-color: #f9f9f9; /* Fondo suave */
+  color: #333; /* Color de texto oscuro */
+}
+
+/* Estilo para errores */
+.error {
+  color: #f44336; /* Rojo para errores */
+  font-size: 0.9em; /* Tamaño de fuente más pequeño */
+  margin-top: 5px; /* Espacio superior */
+}
+
+/* Estilo de los botones */
+.button {
+  background-color: #f6a66e; /* Color principal */
+  color: white; /* Texto blanco */
+  padding: 12px 20px; /* Relleno adecuado */
+  border: none; /* Sin borde */
+  border-radius: 8px; /* Bordes redondeados */
+  font-size: 16px; /* Tamaño de fuente adecuado */
+  cursor: pointer; /* Apunta con el cursor cuando se pasa sobre el botón */
+  transition: background-color 0.3s ease; /* Transición suave para el hover */
+  text-align: center; /* Centra el texto */
+}
+
+.button:hover {
+  background-color: #515451; /* Cambio de color al pasar el ratón */
+}
+
+.reset {
+    
+  color: white;/*Texto blanco*/
+}
+
+.reset:hover {
+  background-color: #98938d; /* Efecto hover para reset. Color diferente al pasar el ratón */
+}
+
+input[readonly] {
+  background-color: #f2f2f2; /* Fondo gris claro para campos de solo lectura */
+  color: #333; /* Texto oscuro */
+  font-weight: bold; /* Texto en negrita */
+}
+
+/* Estilo de los extras */
+.extras {
+  margin-top: 10px; /* Espacio superior */
+  padding-left: 20px; /* Relleno a la izquierda */
+}
+.container form {
+  display: flex; /* Usa flexbox */
+  flex-direction: column; /* Los elementos se alinean en columna */
+}

@@ -1,0 +1,21 @@
+[
+    {
+      "titulo": "10 Consejos para tu primer viaje internacional",
+      "descripcion": "Viajar al extranjero puede parecer abrumador, pero con estos consejos estarás más que preparado para tu aventura.",
+      "imagen": "./images/blog/consejos_viaje.jpg",
+      "enlace": "#"
+    },
+    {
+      "titulo": "Ofertas exclusivas para viajar en 2025",
+      "descripcion": "¡No te pierdas nuestras promociones especiales para los destinos más populares del próximo año!",
+      "imagen": "./images/blog/ofertas_2025.jpg",
+      "enlace": "#"
+    },
+    {
+      "titulo": "Guía completa para descubrir Tokio",
+      "descripcion": "Templos, tecnología, gastronomía y más: descubre todo lo que esta ciudad increíble tiene para ofrecerte.",
+      "imagen": "./images/blog/guia_tokio.jpg",
+      "enlace": "#"
+    }
+  ]
+  
