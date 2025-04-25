@@ -63,9 +63,9 @@
 section {
     padding: 60px 20px; /* Relleno de 60px en la parte superior e inferior, 20px en los lados */
     text-align: center; /* Centra el contenido dentro de la sección */
+    
+
 }
-
-
 /* Estilos para la sección "Sobre Nosotros" */
 .about-us {
     background-color: #fdfdfd; /* Fondo de color blanco suave para la sección */
@@ -111,6 +111,7 @@ section {
 
 /* Estilo de la imagen */
 .about-image img {
+    height: 40%;
     max-width: 100%; /* La imagen no excede el ancho de su contenedor */
     border-radius: 15px; /* Bordes redondeados para la imagen */
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra sutil alrededor de la imagen para darle profundidad */

@@ -21,6 +21,7 @@ header {
 /* Estilo de la imagen del logo */
 .container-logo img {
     width: 50px;               /* Ajusta el tamaño de la imagen del logo */
+    height: 50px;
     margin-right: 10px;        /* Espacio entre la imagen y el texto del logo */
 }
 
@@ -48,6 +49,13 @@ header {
 /* Estilo para los enlaces cuando se pasa el mouse por encima (hover) */
 .nav-links a:hover {
     color: #3498db;            /* Cambia el color del enlace a un azul brillante cuando el mouse pasa por encima */
+}
+
+/* Enlace activo en la barra de navegación */
+.nav-links a.active {
+    color: #3498db;             /* Cambia el color del texto */
+    font-weight: bolder;          /* Hace el texto más visible */
+    border-bottom: 2px solid #eff3f6; /* Subrayado para indicar la página activa */
 }
 
 

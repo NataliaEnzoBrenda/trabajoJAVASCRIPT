@@ -19,7 +19,7 @@
      <!--Contiene el logo, la navegación principal y los enlaces de acceso-->
      <header class="header-container">
         <a href="/" class="container-logo">
-            <img src="/images/logo_adventurero.png" alt="Imagen logo">
+            <img src="/images/logo_adventurero.png" alt="Imagen logo" width="500px" height="500px">
             <span class="logo-text">Viajando Por El Mundo</span>
         </a>
 
@@ -80,19 +80,21 @@
             <option value="500">Paquete a París - 500 euros</option>
             <option value="700">Paquete a Mexico - 700 euros</option>
             <option value="800">Paquete a Nueva York - 800 euros</option>
-            <option value="800">Paquete a Nueva Roma - 850 euros</option>
-            <option value="800">Paquete a Tokio - 1000 euros</option>
+            <option value="850">Paquete a Roma - 850 euros</option>
+            <option value="1000">Paquete a Tokio - 1000 euros</option>
           </select>
+          <span class="error" id="errorProducto"></span>
   
           <label for="plazo">Duración del viaje (en días):</label>
           <input type="number" id="plazo" min="1" value="1">
   
           <label>Extras:</label>
           <div class="extras">
-            <label><input type="checkbox" class="extra" value="50"> Seguro de viaje (+50)</label><br>
-            <label><input type="checkbox" class="extra" value="100"> Excursión adicional (+100)</label><br>
-            <label><input type="checkbox" class="extra" value="150"> Asiento preferente (+150)</label><br>
+            <label><input type="checkbox" class="extra" value="50"> Seguro de viaje (+50)</label>
+            <label><input type="checkbox" class="extra" value="100"> Excursión adicional (+100)</label>
+            <label><input type="checkbox" class="extra" value="150"> Asiento preferente (+150)</label>
           </div>
+
   
           <label for="presupuestoTotal">Presupuesto Total:</label>
           <input type="text" id="presupuestoTotal" readonly>
@@ -115,7 +117,7 @@
         <!-- Logo y descripción -->
         <div class="footer-logo">
             <a href="/" class="container-logo">
-                <img src="../images/logo_adventurero.png" alt="Logo Agencia de Viajes">
+                <img src="../images/logo_adventurero.png" alt="Logo Agencia de Viajes" width="500px" height="500px">
                 <span class="logo-text">Viajando Por El Mundo</span>
             </a>
             <p>Tu compañero perfecto para explorar el mundo.</p>
@@ -126,8 +128,8 @@
             <h4>Enlaces Rápidos</h4>
             <ul>
                 <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./views/contacto.html">Contacto</a></li>
-                <li><a href="./views/presupuesto.html">Presupuesto</a></li>
+                <li><a href="../views/contacto.html">Contacto</a></li>
+                <li><a href="../views/presupuesto.html">Presupuesto</a></li>
                 <li><a href="#">Productos</a></li>
             </ul>
         </div>
@@ -160,7 +162,8 @@
 <!--JAVASCRIPT-->
 <!--Enlace al archivo Javascript que maneja la lógica del formulario del presupuesto-->
 <script src="../js/presupuesto.js"></script>
+<!--Script para marcar la pagina activa-->
+<script src="../js/activo.js"></script>
    
-
 </body>
 </html>
